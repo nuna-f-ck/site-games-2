@@ -175,7 +175,6 @@ body {
 }
 
 .games {
-    // Добавлен блок games
     &__row {
         display: flex;
         flex-wrap: wrap;
@@ -198,6 +197,11 @@ body {
     width: 378px;
     border-radius: 30px;
     padding-bottom: 36px;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 
     &__link {
         text-decoration: none;
@@ -346,9 +350,15 @@ body {
         text-align: center;
         text-decoration: none;
     }
+
+    &__button:hover {
+        background-color: white;
+        color: black;
+    }
+
 }
 
-// Новые стили для мобильной версии
+
 .mobile-games {
     display: none;
     background-color: #202027;
@@ -379,7 +389,6 @@ body {
     padding-bottom: 30px;
     background-color: #FFFFFF;
     border-radius: 30px;
-    height: 529px;
 
     &__img {
         width: 343px;
