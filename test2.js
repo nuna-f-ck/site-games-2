@@ -81,3 +81,4 @@ switch (monthNumber) {
         console.log('номер месяца не может быть больше 13')
         break;
 }
+
