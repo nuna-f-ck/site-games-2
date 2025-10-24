@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400..600&display=swap" rel="stylesheet">
-    <script src="game-1.js"></script> <script src="game-2.js"></script>
+    <script src="game-1.js"></script><script src="game-2.js"></script><script src="game-3.js"></script>
+    <script src="game-4.js"></script>
 </head>
 <body>
     <header class="top center">
@@ -132,7 +133,7 @@
             <div class="mini-games__content">
                 <p class="mini-games__title">Переверни текст</p>
                 <p class="mini-games__description">Попробуй ввести текст, который будет перевернут.</p>
-                <button class="mini-games__button">Играть!</button>
+                <button class="mini-games__button" onclick="reverseText()">Играть!</button>
             </div>
             <img class="mini-games__image" src="img/mini_card_img3.png" alt="обложка игры">
         </article>
@@ -141,7 +142,7 @@
             <div class="mini-games__content">
                 <p class="mini-games__title">Простая викторина</p>
                 <p class="mini-games__description">Отвечай на вопросы викторины с вариантами ответов.</p>
-                <button class="mini-games__button">Играть!</button></div>
+                <button class="mini-games__button" onclick="quizGameFunc()">Играть!</button></div>
         </article>
         <article id="rps" class="mini-games__card">
             <div class="mini-games__content">
@@ -185,7 +186,7 @@
                 <div class="mobile-game-card__content">
                     <p class="mobile-game-card__name">Переверни текст</p>
                     <p class="mobile-game-card__desc">Попробуй ввести текст, который будет перевернут.</p>
-                    <span class="mobile-game-card__button">Играть!</span>
+                    <span class="mobile-game-card__button" onclick="reverseText()">Играть!</span>
                 </div>
             </article>
             <article class="mobile-game-card">
@@ -193,7 +194,7 @@
                 <div class="mobile-game-card__content">
                     <p class="mobile-game-card__name">Камень, ножницы, бумага</p>
                     <p class="mobile-game-card__desc">Сыграй в популярную игру против компьютера.</p>
-                    <span class="mobile-game-card__button">Играть!</span>
+                    <span class="mobile-game-card__button" onclick="quizGameFunc()">Играть!</span>
                 </div>
             </article>
             <article class="mobile-game-card">
