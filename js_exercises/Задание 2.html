@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Задание 2-->
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <button class="button">Изменить цвет</button>
+
+    <script>
+        const textEl = document.querySelector('.text')
+        const buttonEl = document.querySelector('.button')
+
+        buttonEl.addEventListener('click', () => {
+            textEl.style.color = 'blue';
+        })
+    </script>
+</body>
+</html>
