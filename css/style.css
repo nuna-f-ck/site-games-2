@@ -102,19 +102,24 @@ body {
 }
 
 .scroll-bar {
+  background: rgb(188, 236, 48);
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.scroll-bar__group {
   padding: 0px;
   gap: 10px;
   border: 1px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   -webkit-backdrop-filter: blur(50px);
   backdrop-filter: blur(50px);
-  background: rgb(188, 236, 48);
   display: flex;
   align-items: center;
   height: 90px;
-  overflow: hidden;
   gap: 51px;
   padding-left: 19px;
+  animation: scroll-left 40s linear infinite;
 }
 .scroll-bar__text {
   text-transform: uppercase;
@@ -128,6 +133,14 @@ body {
   text-transform: uppercase;
 }
 
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-226%);
+  }
+}
 .about-games {
   background-color: #202027;
   position: relative;
