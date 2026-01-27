@@ -37,6 +37,5 @@
 2.  Перейдите в папку проекта:
     ```bash
     cd site-games-2
-    git checkout cours-work
     ```
 3.  Откройте файл `index.html` в браузере или используйте Live Server в VS Code.
